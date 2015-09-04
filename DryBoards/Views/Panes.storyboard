@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tZ0-Du-NkG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <scenes>
+        <!--Pane Share-->
+        <scene sceneID="hqS-Jq-opF">
+            <objects>
+                <viewController id="tZ0-Du-NkG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4l8-sZ-Mbz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oha-R4-0aZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sgH-hC-DoQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Panes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIv-hD-0ap">
+                                <rect key="frame" x="277" y="289.5" width="46.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cIv-hD-0ap" firstAttribute="centerX" secondItem="sgH-hC-DoQ" secondAttribute="centerX" id="eKY-t3-Jyp"/>
+                            <constraint firstItem="cIv-hD-0ap" firstAttribute="centerY" secondItem="sgH-hC-DoQ" secondAttribute="centerY" id="il9-1A-bha"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pane Share" id="wIF-xB-46d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W1Q-gp-0dp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424" y="440"/>
+        </scene>
+    </scenes>
+</document>

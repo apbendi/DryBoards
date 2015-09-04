@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4AT-Ad-7wP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="MNp-aZ-hAr">
+            <objects>
+                <navigationController id="4AT-Ad-7wP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iri-pp-Smw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0Z1-4Y-Zcd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAw-IK-HOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-416" y="444"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -15,11 +32,97 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi8-IK-f2Z">
+                                <rect key="frame" x="20" y="226" width="560" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Tjh-aA-V3j"/>
+                                </constraints>
+                                <state key="normal" title="Table"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Tjh-aA-V3j"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="J6x-Hx-Mbe" kind="show" id="e3j-l5-51Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vd-bF-PII">
+                                <rect key="frame" x="20" y="330" width="560" height="44"/>
+                                <state key="normal" title="Static"/>
+                                <connections>
+                                    <segue destination="eQR-uI-EPD" kind="show" id="Lgd-Gf-u7G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMl-Tj-4OL">
+                                <rect key="frame" x="20" y="278" width="560" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BAR-xK-oRJ"/>
+                                </constraints>
+                                <state key="normal" title="Panes"/>
+                                <connections>
+                                    <segue destination="Dzi-rt-7Kb" kind="show" id="Z8e-BP-DCU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Vd-bF-PII" firstAttribute="height" secondItem="HMl-Tj-4OL" secondAttribute="height" id="0MP-fE-eXG"/>
+                            <constraint firstItem="HMl-Tj-4OL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0hi-sF-Rkh"/>
+                            <constraint firstItem="4Vd-bF-PII" firstAttribute="leading" secondItem="HMl-Tj-4OL" secondAttribute="leading" id="7XN-zU-3U9"/>
+                            <constraint firstItem="pi8-IK-f2Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="ATH-j1-njT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HMl-Tj-4OL" secondAttribute="trailing" id="BMF-4o-jGq"/>
+                            <constraint firstItem="pi8-IK-f2Z" firstAttribute="height" secondItem="HMl-Tj-4OL" secondAttribute="height" id="ElO-dR-cLz"/>
+                            <constraint firstItem="pi8-IK-f2Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ru3-t8-qMD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pi8-IK-f2Z" secondAttribute="trailing" id="WaM-dC-8RZ"/>
+                            <constraint firstItem="pi8-IK-f2Z" firstAttribute="leading" secondItem="HMl-Tj-4OL" secondAttribute="leading" id="cXc-5U-p3h"/>
+                            <constraint firstItem="HMl-Tj-4OL" firstAttribute="top" secondItem="pi8-IK-f2Z" secondAttribute="bottom" constant="8" symbolic="YES" id="et5-io-auG"/>
+                            <constraint firstItem="HMl-Tj-4OL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gto-Ax-1hw"/>
+                            <constraint firstItem="HMl-Tj-4OL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qDV-I0-wXa"/>
+                            <constraint firstItem="4Vd-bF-PII" firstAttribute="trailing" secondItem="HMl-Tj-4OL" secondAttribute="trailing" id="r6Y-EN-F45"/>
+                            <constraint firstItem="pi8-IK-f2Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rtD-Yk-qbX"/>
+                            <constraint firstItem="pi8-IK-f2Z" firstAttribute="trailing" secondItem="HMl-Tj-4OL" secondAttribute="trailing" id="xP3-XI-DI0"/>
+                            <constraint firstItem="4Vd-bF-PII" firstAttribute="top" secondItem="HMl-Tj-4OL" secondAttribute="bottom" constant="8" symbolic="YES" id="yV7-lE-yWE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ATH-j1-njT"/>
+                                <exclude reference="Ru3-t8-qMD"/>
+                                <exclude reference="WaM-dC-8RZ"/>
+                                <exclude reference="rtD-Yk-qbX"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="eG9-g5-t5Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="344" y="444"/>
+        </scene>
+        <!--Static-->
+        <scene sceneID="VjE-II-Y3g">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Static" id="eQR-uI-EPD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PcX-z9-fbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="549"/>
+        </scene>
+        <!--Table-->
+        <scene sceneID="Z54-jF-ebi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Table" id="J6x-Hx-Mbe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfb-1E-VeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793.5" y="324"/>
+        </scene>
+        <!--Panes-->
+        <scene sceneID="lYk-zN-3kK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Panes" id="Dzi-rt-7Kb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxn-6l-NOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="444"/>
         </scene>
     </scenes>
 </document>

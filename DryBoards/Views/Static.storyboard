@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="77H-Lc-Pby">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <scenes>
+        <!--Static Share-->
+        <scene sceneID="xJT-o7-qXc">
+            <objects>
+                <viewController id="77H-Lc-Pby" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ulj-UH-KGH"/>
+                        <viewControllerLayoutGuide type="bottom" id="5CC-gr-zzJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UVW-Xw-VlY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Static" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3h-DY-FaY">
+                                <rect key="frame" x="278" y="289.5" width="44" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A3h-DY-FaY" firstAttribute="centerY" secondItem="UVW-Xw-VlY" secondAttribute="centerY" id="N3b-zZ-MAM"/>
+                            <constraint firstItem="A3h-DY-FaY" firstAttribute="centerX" secondItem="UVW-Xw-VlY" secondAttribute="centerX" id="xlK-4u-UYe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Static Share" id="fto-2e-R5p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twY-2b-pdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="439"/>
+        </scene>
+    </scenes>
+</document>

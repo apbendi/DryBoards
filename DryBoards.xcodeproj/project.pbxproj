@@ -12,6 +12,9 @@
 		B4C2E8D31B99E2480066B33D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C2E8D11B99E2480066B33D /* Main.storyboard */; };
 		B4C2E8D51B99E2480066B33D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C2E8D41B99E2480066B33D /* Assets.xcassets */; };
 		B4C2E8D81B99E2480066B33D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C2E8D61B99E2480066B33D /* LaunchScreen.storyboard */; };
+		B4C2E8E31B99E7AA0066B33D /* Static.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C2E8E21B99E7AA0066B33D /* Static.storyboard */; settings = {ASSET_TAGS = (); }; };
+		B4C2E8E51B99E8A60066B33D /* Table.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C2E8E41B99E8A60066B33D /* Table.storyboard */; settings = {ASSET_TAGS = (); }; };
+		B4C2E8E71B99E9060066B33D /* Panes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C2E8E61B99E9060066B33D /* Panes.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		B4C2E8D41B99E2480066B33D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4C2E8D71B99E2480066B33D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4C2E8D91B99E2480066B33D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4C2E8E21B99E7AA0066B33D /* Static.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Static.storyboard; sourceTree = "<group>"; };
+		B4C2E8E41B99E8A60066B33D /* Table.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Table.storyboard; sourceTree = "<group>"; };
+		B4C2E8E61B99E9060066B33D /* Panes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Panes.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,9 @@
 				B4C2E8D41B99E2480066B33D /* Assets.xcassets */,
 				B4C2E8D61B99E2480066B33D /* LaunchScreen.storyboard */,
 				B4C2E8D11B99E2480066B33D /* Main.storyboard */,
+				B4C2E8E21B99E7AA0066B33D /* Static.storyboard */,
+				B4C2E8E41B99E8A60066B33D /* Table.storyboard */,
+				B4C2E8E61B99E9060066B33D /* Panes.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,8 +146,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C2E8E31B99E7AA0066B33D /* Static.storyboard in Resources */,
 				B4C2E8D81B99E2480066B33D /* LaunchScreen.storyboard in Resources */,
+				B4C2E8E51B99E8A60066B33D /* Table.storyboard in Resources */,
 				B4C2E8D51B99E2480066B33D /* Assets.xcassets in Resources */,
+				B4C2E8E71B99E9060066B33D /* Panes.storyboard in Resources */,
 				B4C2E8D31B99E2480066B33D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
