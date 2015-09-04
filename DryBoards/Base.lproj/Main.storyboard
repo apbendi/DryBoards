@@ -12,6 +12,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iri-pp-Smw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.10980392160000001" green="0.56078431370000004" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0Z1-4Y-Zcd"/>
@@ -21,7 +22,7 @@
             </objects>
             <point key="canvasLocation" x="-416" y="444"/>
         </scene>
-        <!--View Controller-->
+        <!--Dry Boards-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DryBoards" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,10 +36,15 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi8-IK-f2Z">
                                 <rect key="frame" x="20" y="226" width="560" height="44"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.5607843137254902" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Tjh-aA-V3j"/>
                                 </constraints>
-                                <state key="normal" title="Table"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Table">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Tjh-aA-V3j"/>
@@ -50,23 +56,33 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vd-bF-PII">
                                 <rect key="frame" x="20" y="330" width="560" height="44"/>
-                                <state key="normal" title="Static"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.5607843137254902" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Static">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="eQR-uI-EPD" kind="show" id="Lgd-Gf-u7G"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMl-Tj-4OL">
                                 <rect key="frame" x="20" y="278" width="560" height="44"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.5607843137254902" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="BAR-xK-oRJ"/>
                                 </constraints>
-                                <state key="normal" title="Panes"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Panes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="Dzi-rt-7Kb" kind="show" id="Z8e-BP-DCU"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4Vd-bF-PII" firstAttribute="height" secondItem="HMl-Tj-4OL" secondAttribute="height" id="0MP-fE-eXG"/>
                             <constraint firstItem="HMl-Tj-4OL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0hi-sF-Rkh"/>
@@ -94,7 +110,12 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="eG9-g5-t5Z"/>
+                    <navigationItem key="navigationItem" title="Dry Boards" id="eG9-g5-t5Z"/>
+                    <connections>
+                        <outlet property="panesButton" destination="HMl-Tj-4OL" id="Kcb-NK-7m5"/>
+                        <outlet property="staticButton" destination="4Vd-bF-PII" id="jLi-aS-KjB"/>
+                        <outlet property="tableButton" destination="pi8-IK-f2Z" id="x5P-Lu-94k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
