@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  DryBoards
-//
-//  Created by Ben DiFrancesco on 9/4/15.
-//  Copyright © 2015 Ben DiFrancesco. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
