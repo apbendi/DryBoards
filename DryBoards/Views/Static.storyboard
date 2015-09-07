@@ -54,19 +54,19 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share on Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebl-AM-odQ">
-                                                        <rect key="frame" x="95.5" y="16" width="152.5" height="20.5"/>
+                                                        <rect key="frame" x="96" y="16" width="152.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hqb-7L-BW8">
-                                                        <rect key="frame" x="95.5" y="40" width="496" height="41"/>
+                                                        <rect key="frame" x="96" y="40" width="496" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0d-pm-33d" userLabel="Separator View">
-                                                        <rect key="frame" x="0.0" y="118.5" width="600" height="1"/>
+                                                        <rect key="frame" x="0.0" y="119" width="600" height="1"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="PJP-Nd-Xgv"/>
@@ -79,6 +79,7 @@
                                                     <constraint firstItem="ebl-AM-odQ" firstAttribute="leading" secondItem="NCI-H9-z5i" secondAttribute="trailing" constant="8" id="AwE-oh-tPk"/>
                                                     <constraint firstItem="hqb-7L-BW8" firstAttribute="top" secondItem="ebl-AM-odQ" secondAttribute="bottom" constant="3.5" id="GUB-d9-wks"/>
                                                     <constraint firstItem="hqb-7L-BW8" firstAttribute="leading" secondItem="NCI-H9-z5i" secondAttribute="trailing" constant="8" id="LRR-dd-WdO"/>
+                                                    <constraint firstItem="Y0d-pm-33d" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hqb-7L-BW8" secondAttribute="bottom" constant="8" symbolic="YES" id="Mmi-DE-izo"/>
                                                     <constraint firstItem="ebl-AM-odQ" firstAttribute="top" secondItem="NCI-H9-z5i" secondAttribute="top" constant="8" id="P9A-cG-4Xg"/>
                                                     <constraint firstItem="NCI-H9-z5i" firstAttribute="top" secondItem="jTS-JD-jCs" secondAttribute="top" constant="8" id="SgO-Ru-nPg"/>
                                                     <constraint firstItem="NCI-H9-z5i" firstAttribute="height" secondItem="jTS-JD-jCs" secondAttribute="height" multiplier="2/3" id="VCJ-xL-NIK"/>
@@ -91,6 +92,7 @@
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
+                                                        <exclude reference="jdq-Wp-X6g"/>
                                                         <exclude reference="hSd-mF-Yga"/>
                                                     </mask>
                                                 </variation>
@@ -99,13 +101,13 @@
                                                 <rect key="frame" x="0.0" y="218" width="600" height="120"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share on Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBL-LZ-YdS">
-                                                        <rect key="frame" x="95.5" y="16" width="152.5" height="20.5"/>
+                                                        <rect key="frame" x="96" y="16" width="152.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dEZ-pe-GoE">
-                                                        <rect key="frame" x="95.5" y="40" width="495.5" height="41"/>
+                                                        <rect key="frame" x="96" y="40" width="495.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -169,20 +171,20 @@
                                                         </variation>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share on Pinterest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yib-Zk-bQM">
-                                                        <rect key="frame" x="95.5" y="16" width="152.5" height="20.5"/>
+                                                        <rect key="frame" x="96" y="16" width="152.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNx-D6-f5B" userLabel="Separator View">
-                                                        <rect key="frame" x="0.0" y="118.5" width="600" height="1"/>
+                                                        <rect key="frame" x="0.0" y="119" width="600" height="1"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="5zC-c5-QhA"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jgZ-y2-Qb7">
-                                                        <rect key="frame" x="95.5" y="40" width="495.5" height="41"/>
+                                                        <rect key="frame" x="96" y="40" width="495.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -217,7 +219,7 @@
                                                 <rect key="frame" x="0.0" y="458" width="600" height="120"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share on Google+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4q-Y1-wDt">
-                                                        <rect key="frame" x="95.5" y="16" width="152.5" height="20.5"/>
+                                                        <rect key="frame" x="96" y="16" width="152.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -234,23 +236,35 @@
                                                         </variation>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MPW-Wx-akF">
-                                                        <rect key="frame" x="95.5" y="40" width="496.5" height="41"/>
+                                                        <rect key="frame" x="96" y="40" width="495.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBe-m5-RfW" userLabel="Separator View">
+                                                        <rect key="frame" x="0.0" y="119" width="600" height="1"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="ikn-4M-4bC"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="cXb-wb-AOV" firstAttribute="top" secondItem="AjA-FR-qHW" secondAttribute="top" constant="8" id="2Zg-eA-DxJ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="oBe-m5-RfW" secondAttribute="bottom" id="FEt-o3-lvI"/>
                                                     <constraint firstItem="C4q-Y1-wDt" firstAttribute="top" secondItem="cXb-wb-AOV" secondAttribute="top" constant="8" id="JZH-Q4-sxr"/>
                                                     <constraint firstItem="C4q-Y1-wDt" firstAttribute="leading" secondItem="cXb-wb-AOV" secondAttribute="trailing" constant="8" id="M1a-TB-9ex"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oBe-m5-RfW" secondAttribute="trailing" id="PcL-Cr-y9I"/>
                                                     <constraint firstItem="MPW-Wx-akF" firstAttribute="top" secondItem="C4q-Y1-wDt" secondAttribute="bottom" constant="3.5" id="S4r-y2-HhP"/>
                                                     <constraint firstItem="cXb-wb-AOV" firstAttribute="height" secondItem="AjA-FR-qHW" secondAttribute="height" multiplier="2/3" id="TDM-Nj-BGi"/>
                                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MPW-Wx-akF" secondAttribute="bottom" constant="20" symbolic="YES" id="dnm-YY-IWW"/>
                                                     <constraint firstItem="cXb-wb-AOV" firstAttribute="leading" secondItem="AjA-FR-qHW" secondAttribute="leading" constant="8" id="f1U-Eg-n3k"/>
+                                                    <constraint firstItem="oBe-m5-RfW" firstAttribute="leading" secondItem="cXb-wb-AOV" secondAttribute="trailing" id="ls6-3g-Vza"/>
                                                     <constraint firstItem="MPW-Wx-akF" firstAttribute="leading" secondItem="cXb-wb-AOV" secondAttribute="trailing" constant="8" id="pQA-r5-g1M"/>
                                                     <constraint firstItem="cXb-wb-AOV" firstAttribute="top" secondItem="AjA-FR-qHW" secondAttribute="top" constant="8" id="ssq-rX-1S7"/>
+                                                    <constraint firstItem="oBe-m5-RfW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MPW-Wx-akF" secondAttribute="bottom" constant="8" symbolic="YES" id="umi-Se-b4I"/>
+                                                    <constraint firstItem="oBe-m5-RfW" firstAttribute="leading" secondItem="AjA-FR-qHW" secondAttribute="leading" id="z5u-lQ-5zf"/>
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
@@ -258,7 +272,9 @@
                                                         <exclude reference="TDM-Nj-BGi"/>
                                                         <exclude reference="f1U-Eg-n3k"/>
                                                         <exclude reference="M1a-TB-9ex"/>
+                                                        <exclude reference="dnm-YY-IWW"/>
                                                         <exclude reference="pQA-r5-g1M"/>
+                                                        <exclude reference="ls6-3g-Vza"/>
                                                     </mask>
                                                 </variation>
                                             </view>
