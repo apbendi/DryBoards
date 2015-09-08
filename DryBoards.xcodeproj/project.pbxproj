@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B45D8E131B9F23AD00B75321 /* StaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D8E121B9F23AD00B75321 /* StaticViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B45D8E151B9F281F00B75321 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D8E141B9F281F00B75321 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B45D8E171B9F299E00B75321 /* ShareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D8E161B9F299E00B75321 /* ShareCell.swift */; settings = {ASSET_TAGS = (); }; };
 		B4C2E8CE1B99E2480066B33D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C2E8CD1B99E2480066B33D /* AppDelegate.swift */; };
 		B4C2E8D01B99E2480066B33D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C2E8CF1B99E2480066B33D /* ViewController.swift */; };
 		B4C2E8D31B99E2480066B33D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C2E8D11B99E2480066B33D /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		B45D8E121B9F23AD00B75321 /* StaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticViewController.swift; sourceTree = "<group>"; };
+		B45D8E141B9F281F00B75321 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B45D8E161B9F299E00B75321 /* ShareCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCell.swift; sourceTree = "<group>"; };
 		B4C2E8CA1B99E2480066B33D /* DryBoards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DryBoards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C2E8CD1B99E2480066B33D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4C2E8CF1B99E2480066B33D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			children = (
 				B4C2E8CF1B99E2480066B33D /* ViewController.swift */,
 				B45D8E121B9F23AD00B75321 /* StaticViewController.swift */,
+				B45D8E141B9F281F00B75321 /* TableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 				B4C2E8E21B99E7AA0066B33D /* Static.storyboard */,
 				B4C2E8E41B99E8A60066B33D /* Table.storyboard */,
 				B4C2E8E61B99E9060066B33D /* Panes.storyboard */,
+				B45D8E161B9F299E00B75321 /* ShareCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +174,8 @@
 				B4C2E8D01B99E2480066B33D /* ViewController.swift in Sources */,
 				B45D8E131B9F23AD00B75321 /* StaticViewController.swift in Sources */,
 				B4C2E8CE1B99E2480066B33D /* AppDelegate.swift in Sources */,
+				B45D8E151B9F281F00B75321 /* TableViewController.swift in Sources */,
+				B45D8E171B9F299E00B75321 /* ShareCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
