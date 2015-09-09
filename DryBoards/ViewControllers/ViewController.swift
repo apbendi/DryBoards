@@ -1,15 +1,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var tableButton: UIButton!
-    @IBOutlet weak var panesButton: UIButton!
-    @IBOutlet weak var staticButton: UIButton!
-
+    @IBOutlet var buttons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        ViewController.styleButtons([self.tableButton, self.panesButton, self.staticButton])
+        ViewController.styleButtons(buttons)
     }
 
     static func styleButtons(buttons: [UIButton]) {

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4AT-Ad-7wP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -35,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pi8-IK-f2Z">
-                                <rect key="frame" x="20" y="226" width="560" height="44"/>
+                                <rect key="frame" x="20" y="196" width="560" height="44"/>
                                 <color key="backgroundColor" red="0.10980392156862745" green="0.5607843137254902" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Tjh-aA-V3j"/>
@@ -54,8 +55,28 @@
                                     <segue destination="J6x-Hx-Mbe" kind="show" id="e3j-l5-51Q"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9f-0s-LQl" userLabel="Container Button">
+                                <rect key="frame" x="20" y="248" width="560" height="44"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.56078431370000004" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pN2-DK-vbN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Containers">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pN2-DK-vbN"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="cNv-rA-Jlv" kind="show" id="t2n-uv-6Mt"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vd-bF-PII">
-                                <rect key="frame" x="20" y="330" width="560" height="44"/>
+                                <rect key="frame" x="20" y="352" width="560" height="44"/>
                                 <color key="backgroundColor" red="0.10980392156862745" green="0.5607843137254902" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Static">
@@ -67,7 +88,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMl-Tj-4OL">
-                                <rect key="frame" x="20" y="278" width="560" height="44"/>
+                                <rect key="frame" x="20" y="300" width="560" height="44"/>
                                 <color key="backgroundColor" red="0.10980392156862745" green="0.5607843137254902" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="BAR-xK-oRJ"/>
@@ -89,12 +110,16 @@
                             <constraint firstItem="4Vd-bF-PII" firstAttribute="leading" secondItem="HMl-Tj-4OL" secondAttribute="leading" id="7XN-zU-3U9"/>
                             <constraint firstItem="pi8-IK-f2Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="ATH-j1-njT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HMl-Tj-4OL" secondAttribute="trailing" id="BMF-4o-jGq"/>
+                            <constraint firstItem="O9f-0s-LQl" firstAttribute="height" secondItem="HMl-Tj-4OL" secondAttribute="height" id="Bl1-Bd-V1k"/>
+                            <constraint firstItem="O9f-0s-LQl" firstAttribute="top" secondItem="pi8-IK-f2Z" secondAttribute="bottom" constant="8" symbolic="YES" id="CIr-Op-Imb"/>
                             <constraint firstItem="pi8-IK-f2Z" firstAttribute="height" secondItem="HMl-Tj-4OL" secondAttribute="height" id="ElO-dR-cLz"/>
                             <constraint firstItem="pi8-IK-f2Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ru3-t8-qMD"/>
+                            <constraint firstItem="HMl-Tj-4OL" firstAttribute="top" secondItem="O9f-0s-LQl" secondAttribute="bottom" constant="8" symbolic="YES" id="TwL-uo-ZjL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pi8-IK-f2Z" secondAttribute="trailing" id="WaM-dC-8RZ"/>
+                            <constraint firstItem="O9f-0s-LQl" firstAttribute="leading" secondItem="HMl-Tj-4OL" secondAttribute="leading" id="Wbd-v1-mDY"/>
                             <constraint firstItem="pi8-IK-f2Z" firstAttribute="leading" secondItem="HMl-Tj-4OL" secondAttribute="leading" id="cXc-5U-p3h"/>
-                            <constraint firstItem="HMl-Tj-4OL" firstAttribute="top" secondItem="pi8-IK-f2Z" secondAttribute="bottom" constant="8" symbolic="YES" id="et5-io-auG"/>
-                            <constraint firstItem="HMl-Tj-4OL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gto-Ax-1hw"/>
+                            <constraint firstItem="HMl-Tj-4OL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gto-Ax-1hw"/>
+                            <constraint firstItem="O9f-0s-LQl" firstAttribute="trailing" secondItem="HMl-Tj-4OL" secondAttribute="trailing" id="k53-vr-1Cg"/>
                             <constraint firstItem="HMl-Tj-4OL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qDV-I0-wXa"/>
                             <constraint firstItem="4Vd-bF-PII" firstAttribute="trailing" secondItem="HMl-Tj-4OL" secondAttribute="trailing" id="r6Y-EN-F45"/>
                             <constraint firstItem="pi8-IK-f2Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rtD-Yk-qbX"/>
@@ -112,9 +137,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Dry Boards" id="eG9-g5-t5Z"/>
                     <connections>
-                        <outlet property="panesButton" destination="HMl-Tj-4OL" id="Kcb-NK-7m5"/>
-                        <outlet property="staticButton" destination="4Vd-bF-PII" id="jLi-aS-KjB"/>
-                        <outlet property="tableButton" destination="pi8-IK-f2Z" id="x5P-Lu-94k"/>
+                        <outletCollection property="buttons" destination="4Vd-bF-PII" collectionClass="NSMutableArray" id="hfG-Vs-gLv"/>
+                        <outletCollection property="buttons" destination="HMl-Tj-4OL" collectionClass="NSMutableArray" id="PYq-zh-iGb"/>
+                        <outletCollection property="buttons" destination="O9f-0s-LQl" collectionClass="NSMutableArray" id="hWE-7p-klL"/>
+                        <outletCollection property="buttons" destination="pi8-IK-f2Z" collectionClass="NSMutableArray" id="WH3-xg-HNL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -127,7 +153,7 @@
                 <viewControllerPlaceholder storyboardName="Static" id="eQR-uI-EPD" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcX-z9-fbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="794" y="549"/>
+            <point key="canvasLocation" x="792" y="566"/>
         </scene>
         <!--Table-->
         <scene sceneID="Z54-jF-ebi">
@@ -137,13 +163,21 @@
             </objects>
             <point key="canvasLocation" x="793.5" y="324"/>
         </scene>
+        <!--Containers-->
+        <scene sceneID="lFV-z2-8ic">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Containers" id="cNv-rA-Jlv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X8a-ds-jGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834" y="394"/>
+        </scene>
         <!--Panes-->
         <scene sceneID="lYk-zN-3kK">
             <objects>
                 <viewControllerPlaceholder storyboardName="Panes" id="Dzi-rt-7Kb" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxn-6l-NOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="444"/>
+            <point key="canvasLocation" x="820" y="481"/>
         </scene>
     </scenes>
 </document>
