@@ -60,18 +60,18 @@ class TableViewController: UITableViewController {
     // MARK: Action Handlers
 
     private func didSelectFacebookShare() {
-        NSLog("Facebook")
+        ShareController.shareOnFacebookFrom(viewController: self)
     }
 
     private func didSelectTwitterShare() {
-        NSLog("Twitter")
+        ShareController.shareOnTwitterFrom(viewController: self)
     }
 
     private func didSelectPinterestShare() {
-        NSLog("Pinterest")
+        ShareController.shareOnPinterestFrom(viewController: self)
     }
 
     private func didSelectGoogleShare() {
-        NSLog("Google")
+        ShareController.shareOnGoogleFrom(viewController: self)
     }
 }

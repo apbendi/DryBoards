@@ -9,18 +9,18 @@ class StaticViewController: UIViewController {
 
     // MARK: Target-Action
     @IBAction func facebookShareDidPress(sender: UIButton) {
-        NSLog("Facebook Share")
+        ShareController.shareOnFacebookFrom(viewController: self)
     }
     
     @IBAction func twitterShareDidPress(sender: UIButton) {
-        NSLog("Twitter Share")
+        ShareController.shareOnTwitterFrom(viewController: self)
     }
 
     @IBAction func pinterestShareDidPress(sender: UIButton) {
-        NSLog("Pinterest Share")
+        ShareController.shareOnPinterestFrom(viewController: self)
     }
 
     @IBAction func googleShareDidPress(sender: UIButton) {
-        NSLog("Google Share")
+        ShareController.shareOnGoogleFrom(viewController: self)
     }
 }
