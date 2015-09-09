@@ -57,7 +57,7 @@
                             </variation>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShareCell" rowHeight="125" id="zaR-8I-CRV" customClass="ShareCell" customModule="DryBoards" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShareCell" rowHeight="125" id="zaR-8I-CRV" customClass="ShareCell" customModule="DryBoards" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="148" width="600" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zaR-8I-CRV" id="uuw-ok-BL5">
@@ -87,9 +87,6 @@
                                                         <constraint firstAttribute="height" constant="1" id="I7x-bO-IO7"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMW-Tt-6TN" userLabel="Facebook Button">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="125"/>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FYG-2l-cpN">
                                                     <rect key="frame" x="95" y="32" width="489" height="41"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -101,9 +98,6 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="FYG-2l-cpN" secondAttribute="trailing" constant="16" id="8fg-Pg-G0q"/>
                                                 <constraint firstItem="pPr-51-cfO" firstAttribute="leading" secondItem="7yf-XK-qfR" secondAttribute="leading" id="BJl-iX-nTU"/>
-                                                <constraint firstItem="nMW-Tt-6TN" firstAttribute="leading" secondItem="7yf-XK-qfR" secondAttribute="leading" id="CD6-T2-I8U"/>
-                                                <constraint firstAttribute="bottom" secondItem="nMW-Tt-6TN" secondAttribute="bottom" id="HC8-u5-QGD"/>
-                                                <constraint firstItem="nMW-Tt-6TN" firstAttribute="top" secondItem="7yf-XK-qfR" secondAttribute="top" id="Iws-PK-RGl"/>
                                                 <constraint firstItem="VPP-Cb-aaT" firstAttribute="height" secondItem="7yf-XK-qfR" secondAttribute="height" multiplier="1/2" id="Tuu-UV-MGb"/>
                                                 <constraint firstAttribute="bottom" secondItem="pPr-51-cfO" secondAttribute="bottom" id="U5w-f8-pqD"/>
                                                 <constraint firstItem="9d3-fn-qhO" firstAttribute="top" secondItem="VPP-Cb-aaT" secondAttribute="top" id="UJf-3L-UTy"/>
@@ -114,7 +108,6 @@
                                                 <constraint firstItem="FYG-2l-cpN" firstAttribute="top" secondItem="9d3-fn-qhO" secondAttribute="bottom" constant="3.5" id="kAJ-Mb-Tgk"/>
                                                 <constraint firstItem="pPr-51-cfO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FYG-2l-cpN" secondAttribute="bottom" constant="8" symbolic="YES" id="pzf-HL-2ul"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FYG-2l-cpN" secondAttribute="bottom" constant="20" symbolic="YES" id="qO0-hY-TjG"/>
-                                                <constraint firstAttribute="trailing" secondItem="nMW-Tt-6TN" secondAttribute="trailing" id="sQl-dr-dZ5"/>
                                                 <constraint firstItem="pPr-51-cfO" firstAttribute="leading" secondItem="VPP-Cb-aaT" secondAttribute="trailing" id="vNU-pp-bVR"/>
                                                 <constraint firstItem="9d3-fn-qhO" firstAttribute="leading" secondItem="VPP-Cb-aaT" secondAttribute="trailing" constant="16" id="yeD-3A-4E3"/>
                                             </constraints>

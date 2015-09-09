@@ -37,4 +37,41 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 125.0
     }
+
+    // MARK: UITableViewDelegate
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        guard let type = ShareType(rawValue: indexPath.row) else {
+            return;
+        }
+
+        switch type {
+        case .Facebook:
+            didSelectFacebookShare()
+        case .Twitter:
+            didSelectTwitterShare()
+        case .Pinterest:
+            didSelectPinterestShare()
+        case .Google:
+            didSelectGoogleShare()
+        }
+    }
+
+    // MARK: Action Handlers
+
+    private func didSelectFacebookShare() {
+        NSLog("Facebook")
+    }
+
+    private func didSelectTwitterShare() {
+        NSLog("Twitter")
+    }
+
+    private func didSelectPinterestShare() {
+        NSLog("Pinterest")
+    }
+
+    private func didSelectGoogleShare() {
+        NSLog("Google")
+    }
 }
