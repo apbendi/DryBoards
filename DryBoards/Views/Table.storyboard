@@ -57,7 +57,7 @@
                             </variation>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShareCell" rowHeight="125" id="zaR-8I-CRV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShareCell" rowHeight="125" id="zaR-8I-CRV" customClass="ShareCell" customModule="DryBoards" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="148" width="600" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zaR-8I-CRV" id="uuw-ok-BL5">
@@ -135,6 +135,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="headerLabel" destination="9d3-fn-qhO" id="oNg-x6-uSq"/>
+                                    <outlet property="icon" destination="VPP-Cb-aaT" id="9Pr-D4-KBs"/>
+                                    <outlet property="messageLabel" destination="FYG-2l-cpN" id="Mkg-Wf-MkI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

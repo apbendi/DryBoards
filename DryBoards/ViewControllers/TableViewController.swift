@@ -20,6 +20,17 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ShareCell", forIndexPath: indexPath)
 
+        guard let shareCell = cell as? ShareCell else {
+            return cell;
+        }
+
+        guard let type = ShareType(rawValue: indexPath.row) else {
+            return shareCell;
+        }
+
+        let viewModel = ShareViewModel(type: type)
+        shareCell.configureWith(viewModel)
+
         return cell
     }
 

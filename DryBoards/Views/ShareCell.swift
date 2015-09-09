@@ -1,15 +1,15 @@
 import UIKit
 
 class ShareCell: UITableViewCell {
+    @IBOutlet weak var icon: UIImageView!
+    @IBOutlet weak var headerLabel: UILabel!
+    @IBOutlet weak var messageLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    func configureWith(viewModel: ShareViewModel) {
+        icon.image = viewModel.icon
+        headerLabel.text = viewModel.header
+        messageLabel.text = viewModel.message
 
+        icon.backgroundColor = viewModel.iconBackground
     }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-    }
-
 }

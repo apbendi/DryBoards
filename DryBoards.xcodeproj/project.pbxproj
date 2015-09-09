@@ -10,6 +10,8 @@
 		B45D8E131B9F23AD00B75321 /* StaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D8E121B9F23AD00B75321 /* StaticViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B45D8E151B9F281F00B75321 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D8E141B9F281F00B75321 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B45D8E171B9F299E00B75321 /* ShareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D8E161B9F299E00B75321 /* ShareCell.swift */; settings = {ASSET_TAGS = (); }; };
+		B4798CCE1B9FCF8A0043D25A /* ShareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4798CCD1B9FCF8A0043D25A /* ShareViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		B4798CD01B9FD0650043D25A /* ShareType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4798CCF1B9FD0650043D25A /* ShareType.swift */; settings = {ASSET_TAGS = (); }; };
 		B4C2E8CE1B99E2480066B33D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C2E8CD1B99E2480066B33D /* AppDelegate.swift */; };
 		B4C2E8D01B99E2480066B33D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C2E8CF1B99E2480066B33D /* ViewController.swift */; };
 		B4C2E8D31B99E2480066B33D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C2E8D11B99E2480066B33D /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		B45D8E121B9F23AD00B75321 /* StaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticViewController.swift; sourceTree = "<group>"; };
 		B45D8E141B9F281F00B75321 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B45D8E161B9F299E00B75321 /* ShareCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCell.swift; sourceTree = "<group>"; };
+		B4798CCD1B9FCF8A0043D25A /* ShareViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewModel.swift; sourceTree = "<group>"; };
+		B4798CCF1B9FD0650043D25A /* ShareType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareType.swift; sourceTree = "<group>"; };
 		B4C2E8CA1B99E2480066B33D /* DryBoards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DryBoards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C2E8CD1B99E2480066B33D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4C2E8CF1B99E2480066B33D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4798CCC1B9FCF510043D25A /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4798CCD1B9FCF8A0043D25A /* ShareViewModel.swift */,
+				B4798CCF1B9FD0650043D25A /* ShareType.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		B4C2E8C11B99E2480066B33D = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +82,7 @@
 				B4C2E8CD1B99E2480066B33D /* AppDelegate.swift */,
 				B4C2E8D91B99E2480066B33D /* Info.plist */,
 				B4C2E8E11B99E3F90066B33D /* Views */,
+				B4798CCC1B9FCF510043D25A /* View Models */,
 				B4C2E8E01B99E3DC0066B33D /* ViewControllers */,
 			);
 			path = DryBoards;
@@ -171,7 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4798CCE1B9FCF8A0043D25A /* ShareViewModel.swift in Sources */,
 				B4C2E8D01B99E2480066B33D /* ViewController.swift in Sources */,
+				B4798CD01B9FD0650043D25A /* ShareType.swift in Sources */,
 				B45D8E131B9F23AD00B75321 /* StaticViewController.swift in Sources */,
 				B4C2E8CE1B99E2480066B33D /* AppDelegate.swift in Sources */,
 				B45D8E151B9F281F00B75321 /* TableViewController.swift in Sources */,
