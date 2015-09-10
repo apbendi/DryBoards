@@ -6,7 +6,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Pane Share-->
+        <!--Containers-->
         <scene sceneID="hqS-Jq-opF">
             <objects>
                 <viewController id="tZ0-Du-NkG" customClass="ContainerParentViewController" customModule="DryBoards" customModuleProvider="target" sceneMemberID="viewController">
@@ -115,7 +115,7 @@
                             <constraint firstItem="VWH-40-3md" firstAttribute="height" secondItem="sgH-hC-DoQ" secondAttribute="height" multiplier="1/5" id="nVd-th-hK1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pane Share" id="wIF-xB-46d"/>
+                    <navigationItem key="navigationItem" title="Containers" id="wIF-xB-46d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1Q-gp-0dp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

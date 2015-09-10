@@ -6,7 +6,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Table Share-->
+        <!--Table-->
         <scene sceneID="nPf-Wk-6oE">
             <objects>
                 <tableViewController id="xTx-i7-IKo" customClass="TableViewController" customModule="DryBoards" customModuleProvider="target" sceneMemberID="viewController">
@@ -140,7 +140,7 @@
                             <outlet property="delegate" destination="xTx-i7-IKo" id="ckN-vF-oXs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Table Share" id="Usl-Zj-M11"/>
+                    <navigationItem key="navigationItem" title="Table" id="Usl-Zj-M11"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bc8-Ly-c3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

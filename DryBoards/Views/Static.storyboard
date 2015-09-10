@@ -6,7 +6,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Static Share-->
+        <!--Static-->
         <scene sceneID="xJT-o7-qXc">
             <objects>
                 <viewController id="77H-Lc-Pby" customClass="StaticViewController" customModule="DryBoards" customModuleProvider="target" sceneMemberID="viewController">
@@ -396,7 +396,7 @@
                             <constraint firstAttribute="trailing" secondItem="M9J-oO-fon" secondAttribute="trailing" id="xvU-7H-Qod"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Static Share" id="fto-2e-R5p"/>
+                    <navigationItem key="navigationItem" title="Static" id="fto-2e-R5p"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twY-2b-pdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

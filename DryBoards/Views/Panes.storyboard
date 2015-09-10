@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Containers-->
+        <!--Panes-->
         <scene sceneID="PcE-7B-Qcw">
             <objects>
                 <viewController id="Fzf-Vq-orP" customClass="PanesViewController" customModule="DryBoards" customModuleProvider="target" sceneMemberID="viewController">
@@ -148,7 +148,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Containers" id="XD1-t7-jdH"/>
+                    <navigationItem key="navigationItem" title="Panes" id="XD1-t7-jdH"/>
                     <connections>
                         <outlet property="facebookPane" destination="Awg-MV-sdp" id="9Be-Wi-db5"/>
                         <outlet property="googlePane" destination="Jgi-eO-FLF" id="lSD-92-KRS"/>
