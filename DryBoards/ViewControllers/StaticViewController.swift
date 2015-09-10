@@ -1,12 +1,7 @@
 import UIKit
 
 class StaticViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
+    
     // MARK: Target-Action
     @IBAction func facebookShareDidPress(sender: UIButton) {
         ShareController.shareOn(.Facebook, from:self)

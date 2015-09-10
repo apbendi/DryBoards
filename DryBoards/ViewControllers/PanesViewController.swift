@@ -15,6 +15,8 @@ class PanesViewController: UIViewController, SharePaneDelegate {
         [facebookPane, twitterPane, pinterestPane, googlePane].forEach{ pane in pane.delegate = self }
     }
 
+    // Mark: SharePaneDelegate
+
     func sharePaneSharedType(type: ShareType) {
         ShareController.shareOn(type, from: self)
     }
