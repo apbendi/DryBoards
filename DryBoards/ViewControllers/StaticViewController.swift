@@ -9,18 +9,18 @@ class StaticViewController: UIViewController {
 
     // MARK: Target-Action
     @IBAction func facebookShareDidPress(sender: UIButton) {
-        ShareController.shareOnFacebookFrom(viewController: self)
+        ShareController.shareOn(.Facebook, from:self)
     }
     
     @IBAction func twitterShareDidPress(sender: UIButton) {
-        ShareController.shareOnTwitterFrom(viewController: self)
+        ShareController.shareOn(.Twitter, from: self)
     }
 
     @IBAction func pinterestShareDidPress(sender: UIButton) {
-        ShareController.shareOnPinterestFrom(viewController: self)
+        ShareController.shareOn(.Pinterest, from: self)
     }
 
     @IBAction func googleShareDidPress(sender: UIButton) {
-        ShareController.shareOnGoogleFrom(viewController: self)
+        ShareController.shareOn(.Google, from: self)
     }
 }
