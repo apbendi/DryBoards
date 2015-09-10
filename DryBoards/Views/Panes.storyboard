@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHT-vI-gEU">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nk4-cA-BbF" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="578.5"/>
@@ -50,7 +50,7 @@
                                                 </variation>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blk-Df-mdL" userLabel="Twitter Pane" customClass="SharePaneView" customModule="DryBoards" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="218.5" width="600" height="120"/>
+                                                <rect key="frame" x="0.0" y="218" width="600" height="120"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="3sl-Mt-vkh"/>
@@ -66,7 +66,7 @@
                                                 </variation>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uV-B4-lZq" userLabel="Pinterest Pane" customClass="SharePaneView" customModule="DryBoards" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="338.5" width="600" height="119.5"/>
+                                                <rect key="frame" x="0.0" y="338" width="600" height="119.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="6Y7-KD-g3m"/>
@@ -98,7 +98,7 @@
                                                 </variation>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="When you share DryBoards, you let your friends know about this great app that does nothing." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Wa-4e-KAx">
-                                                <rect key="frame" x="20" y="54.5" width="560" height="36"/>
+                                                <rect key="frame" x="20" y="54" width="560" height="36"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="74k-4R-vDn"/>
@@ -148,10 +148,16 @@
                             <constraint firstItem="Awg-MV-sdp" firstAttribute="height" secondItem="vpq-YP-iVO" secondAttribute="height" multiplier="1/5" id="35W-Bx-kKv"/>
                             <constraint firstItem="aHT-vI-gEU" firstAttribute="top" secondItem="uaE-jb-Sy5" secondAttribute="bottom" id="CZP-cz-Zoq"/>
                             <constraint firstAttribute="trailing" secondItem="aHT-vI-gEU" secondAttribute="trailing" id="EK4-8N-0UC"/>
+                            <constraint firstItem="aHT-vI-gEU" firstAttribute="top" secondItem="vpq-YP-iVO" secondAttribute="top" id="EkF-Ws-aFk"/>
                             <constraint firstItem="Nk4-cA-BbF" firstAttribute="width" secondItem="vpq-YP-iVO" secondAttribute="width" id="Fvj-dP-MEU"/>
                             <constraint firstItem="aHT-vI-gEU" firstAttribute="leading" secondItem="vpq-YP-iVO" secondAttribute="leading" id="VbD-rF-chi"/>
                             <constraint firstItem="8LN-DU-9Dr" firstAttribute="top" secondItem="aHT-vI-gEU" secondAttribute="bottom" id="o4X-Sr-1gX"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CZP-cz-Zoq"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Panes" id="XD1-t7-jdH"/>
                     <connections>
