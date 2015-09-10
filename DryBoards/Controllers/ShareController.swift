@@ -2,6 +2,23 @@ import UIKit
 
 struct ShareController {
 
+    static func shareOn(network: ShareType, from: UIViewController) {
+        let name : String
+
+        switch network {
+        case .Facebook:
+            name = "Facebook"
+        case .Twitter:
+            name = "Twitter"
+        case .Pinterest:
+            name = "Pinterest"
+        case .Google:
+            name = "Google"
+        }
+
+        shareOn(name, viewController: from)
+    }
+
     static func shareOnFacebookFrom(viewController viewController: UIViewController) {
         self.shareOn("Facebook", viewController: viewController)
     }
