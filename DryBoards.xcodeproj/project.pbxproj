@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B41E5DEF1BA1BF6A0032AB2D /* ContainerParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E5DEE1BA1BF6A0032AB2D /* ContainerParentViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B41E5DF11BA1BF980032AB2D /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E5DF01BA1BF980032AB2D /* ContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B41E5DF31BA1FA130032AB2D /* SharePaneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B41E5DF21BA1FA130032AB2D /* SharePaneView.xib */; settings = {ASSET_TAGS = (); }; };
+		B41E5DF51BA1FA420032AB2D /* SharePaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E5DF41BA1FA420032AB2D /* SharePaneView.swift */; settings = {ASSET_TAGS = (); }; };
+		B41E5DF81BA1FF710032AB2D /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E5DF71BA1FF710032AB2D /* NibDesignable.swift */; settings = {ASSET_TAGS = (); }; };
 		B45D8E131B9F23AD00B75321 /* StaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D8E121B9F23AD00B75321 /* StaticViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B45D8E151B9F281F00B75321 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D8E141B9F281F00B75321 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B45D8E171B9F299E00B75321 /* ShareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D8E161B9F299E00B75321 /* ShareCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -29,6 +32,9 @@
 /* Begin PBXFileReference section */
 		B41E5DEE1BA1BF6A0032AB2D /* ContainerParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerParentViewController.swift; sourceTree = "<group>"; };
 		B41E5DF01BA1BF980032AB2D /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		B41E5DF21BA1FA130032AB2D /* SharePaneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SharePaneView.xib; sourceTree = "<group>"; };
+		B41E5DF41BA1FA420032AB2D /* SharePaneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharePaneView.swift; sourceTree = "<group>"; };
+		B41E5DF71BA1FF710032AB2D /* NibDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 		B45D8E121B9F23AD00B75321 /* StaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticViewController.swift; sourceTree = "<group>"; };
 		B45D8E141B9F281F00B75321 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B45D8E161B9F299E00B75321 /* ShareCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCell.swift; sourceTree = "<group>"; };
@@ -59,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B41E5DF61BA1FF3C0032AB2D /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				B41E5DF71BA1FF710032AB2D /* NibDesignable.swift */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
 		B4798CCC1B9FCF510043D25A /* View Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +116,7 @@
 				B4C2E8E11B99E3F90066B33D /* Views */,
 				B4798CCC1B9FCF510043D25A /* View Models */,
 				B4C2E8E01B99E3DC0066B33D /* ViewControllers */,
+				B41E5DF61BA1FF3C0032AB2D /* Third Party */,
 			);
 			path = DryBoards;
 			sourceTree = "<group>";
@@ -129,6 +144,8 @@
 				B4798CD41BA0769C0043D25A /* Panes.storyboard */,
 				B4C2E8E21B99E7AA0066B33D /* Static.storyboard */,
 				B45D8E161B9F299E00B75321 /* ShareCell.swift */,
+				B41E5DF21BA1FA130032AB2D /* SharePaneView.xib */,
+				B41E5DF41BA1FA420032AB2D /* SharePaneView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +212,7 @@
 				B4C2E8D81B99E2480066B33D /* LaunchScreen.storyboard in Resources */,
 				B4C2E8E51B99E8A60066B33D /* Table.storyboard in Resources */,
 				B4C2E8D51B99E2480066B33D /* Assets.xcassets in Resources */,
+				B41E5DF31BA1FA130032AB2D /* SharePaneView.xib in Resources */,
 				B4C2E8E71B99E9060066B33D /* Containers.storyboard in Resources */,
 				B4C2E8D31B99E2480066B33D /* Main.storyboard in Resources */,
 			);
@@ -207,6 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B41E5DF51BA1FA420032AB2D /* SharePaneView.swift in Sources */,
+				B41E5DF81BA1FF710032AB2D /* NibDesignable.swift in Sources */,
 				B4798CCE1B9FCF8A0043D25A /* ShareViewModel.swift in Sources */,
 				B4C2E8D01B99E2480066B33D /* ViewController.swift in Sources */,
 				B41E5DF11BA1BF980032AB2D /* ContainerViewController.swift in Sources */,

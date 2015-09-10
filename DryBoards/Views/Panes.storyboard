@@ -16,18 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Panes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGt-y2-vzw">
-                                <rect key="frame" x="277" y="290" width="46.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Awg-MV-sdp" customClass="SharePaneView" customModule="DryBoards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="600" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="KeW-2B-8bi"/>
+                                    <constraint firstAttribute="width" constant="240" id="ePj-z8-R81"/>
+                                    <constraint firstAttribute="height" constant="128" id="oKY-hH-5qt"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ePj-z8-R81"/>
+                                        <exclude reference="oKY-hH-5qt"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="MGt-y2-vzw" firstAttribute="centerY" secondItem="vpq-YP-iVO" secondAttribute="centerY" id="9lV-VB-OmN"/>
-                            <constraint firstItem="MGt-y2-vzw" firstAttribute="centerX" secondItem="vpq-YP-iVO" secondAttribute="centerX" id="eC9-jF-YiM"/>
+                            <constraint firstAttribute="trailing" secondItem="Awg-MV-sdp" secondAttribute="trailing" id="17y-fm-NyL"/>
+                            <constraint firstItem="Awg-MV-sdp" firstAttribute="centerY" secondItem="vpq-YP-iVO" secondAttribute="centerY" id="29a-Y7-UsP"/>
+                            <constraint firstItem="8LN-DU-9Dr" firstAttribute="top" secondItem="Awg-MV-sdp" secondAttribute="bottom" id="2XV-W3-i8q"/>
+                            <constraint firstItem="Awg-MV-sdp" firstAttribute="top" secondItem="vpq-YP-iVO" secondAttribute="top" id="4sQ-xK-g6y"/>
+                            <constraint firstItem="Awg-MV-sdp" firstAttribute="centerX" secondItem="vpq-YP-iVO" secondAttribute="centerX" id="5UR-LD-fzD"/>
+                            <constraint firstItem="Awg-MV-sdp" firstAttribute="leading" secondItem="vpq-YP-iVO" secondAttribute="leading" id="8eQ-qM-g3R"/>
+                            <constraint firstItem="Awg-MV-sdp" firstAttribute="leading" secondItem="vpq-YP-iVO" secondAttribute="leading" id="IfX-cG-BQC"/>
+                            <constraint firstItem="Awg-MV-sdp" firstAttribute="top" secondItem="uaE-jb-Sy5" secondAttribute="bottom" id="Vpn-3M-ewq"/>
+                            <constraint firstItem="Awg-MV-sdp" firstAttribute="top" secondItem="uaE-jb-Sy5" secondAttribute="bottom" id="kD4-k9-hD9"/>
+                            <constraint firstAttribute="trailing" secondItem="Awg-MV-sdp" secondAttribute="trailing" id="lpB-v5-Ozd"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="29a-Y7-UsP"/>
+                                <exclude reference="4sQ-xK-g6y"/>
+                                <exclude reference="5UR-LD-fzD"/>
+                                <exclude reference="IfX-cG-BQC"/>
+                                <exclude reference="kD4-k9-hD9"/>
+                                <exclude reference="lpB-v5-Ozd"/>
+                                <exclude reference="2XV-W3-i8q"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Containers" id="XD1-t7-jdH"/>
                 </viewController>
