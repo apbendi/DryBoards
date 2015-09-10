@@ -1,6 +1,6 @@
 import UIKit
 
-class PanesViewController: UIViewController {
+class PanesViewController: UIViewController, SharePaneDelegate {
     @IBOutlet weak var facebookPane: SharePaneView!
     @IBOutlet weak var twitterPane: SharePaneView!
     @IBOutlet weak var pinterestPane: SharePaneView!
@@ -11,6 +11,11 @@ class PanesViewController: UIViewController {
         self.twitterPane.configureAs(.Twitter)
         self.pinterestPane.configureAs(.Pinterest)
         self.googlePane.configureAs(.Google)
+
+        [facebookPane, twitterPane, pinterestPane, googlePane].map { pane in pane.delegate = self }
     }
 
+    func sharePaneSharedType(type: ShareType) {
+        ShareController.shareOn(type, from: self)
+    }
 }
