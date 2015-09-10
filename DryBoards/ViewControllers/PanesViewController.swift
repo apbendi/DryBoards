@@ -12,7 +12,7 @@ class PanesViewController: UIViewController, SharePaneDelegate {
         self.pinterestPane.configureAs(.Pinterest)
         self.googlePane.configureAs(.Google)
 
-        [facebookPane, twitterPane, pinterestPane, googlePane].map { pane in pane.delegate = self }
+        [facebookPane, twitterPane, pinterestPane, googlePane].forEach{ pane in pane.delegate = self }
     }
 
     func sharePaneSharedType(type: ShareType) {
