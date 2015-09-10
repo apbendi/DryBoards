@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Fzf-Vq-orP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Panes-->
@@ -17,136 +17,141 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Share DryBoards!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vj5-nv-Ew6">
-                                <rect key="frame" x="20" y="28" width="560" height="26.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHT-vI-gEU">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nk4-cA-BbF" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="578.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Share DryBoards!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vj5-nv-Ew6">
+                                                <rect key="frame" x="20" y="20" width="560" height="26.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26.5" id="8wQ-EZ-Zlg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Awg-MV-sdp" userLabel="Facebook Pane" customClass="SharePaneView" customModule="DryBoards" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="98" width="600" height="120"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="KeW-2B-8bi"/>
+                                                    <constraint firstAttribute="width" constant="240" id="ePj-z8-R81"/>
+                                                    <constraint firstAttribute="height" constant="128" id="oKY-hH-5qt"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="KeW-2B-8bi"/>
+                                                        <exclude reference="ePj-z8-R81"/>
+                                                        <exclude reference="oKY-hH-5qt"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blk-Df-mdL" userLabel="Twitter Pane" customClass="SharePaneView" customModule="DryBoards" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="218.5" width="600" height="120"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="3sl-Mt-vkh"/>
+                                                    <constraint firstAttribute="width" constant="240" id="DWj-a6-hql"/>
+                                                    <constraint firstAttribute="height" constant="128" id="jTK-ZG-dsF"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="jTK-ZG-dsF"/>
+                                                        <exclude reference="DWj-a6-hql"/>
+                                                        <exclude reference="3sl-Mt-vkh"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uV-B4-lZq" userLabel="Pinterest Pane" customClass="SharePaneView" customModule="DryBoards" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="338.5" width="600" height="119.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="6Y7-KD-g3m"/>
+                                                    <constraint firstAttribute="height" constant="128" id="8Lf-09-vWe"/>
+                                                    <constraint firstAttribute="width" constant="240" id="PsI-OV-QNI"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="8Lf-09-vWe"/>
+                                                        <exclude reference="PsI-OV-QNI"/>
+                                                        <exclude reference="6Y7-KD-g3m"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgi-eO-FLF" userLabel="Google Pane" customClass="SharePaneView" customModule="DryBoards" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="458" width="600" height="120"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="b2v-WF-wd9"/>
+                                                    <constraint firstAttribute="width" constant="240" id="rpt-MF-W44"/>
+                                                    <constraint firstAttribute="height" constant="128" id="vMN-dx-xXO"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="b2v-WF-wd9"/>
+                                                        <exclude reference="rpt-MF-W44"/>
+                                                        <exclude reference="vMN-dx-xXO"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="When you share DryBoards, you let your friends know about this great app that does nothing." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Wa-4e-KAx">
+                                                <rect key="frame" x="20" y="54.5" width="560" height="36"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="74k-4R-vDn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Awg-MV-sdp" secondAttribute="trailing" id="4Sb-bX-LS2"/>
+                                            <constraint firstItem="Jgi-eO-FLF" firstAttribute="top" secondItem="2uV-B4-lZq" secondAttribute="bottom" id="4qk-uE-nMC"/>
+                                            <constraint firstItem="2uV-B4-lZq" firstAttribute="height" secondItem="blk-Df-mdL" secondAttribute="height" id="4tZ-tO-D26"/>
+                                            <constraint firstItem="blk-Df-mdL" firstAttribute="leading" secondItem="Awg-MV-sdp" secondAttribute="leading" id="6k2-hU-mBG"/>
+                                            <constraint firstItem="6Wa-4e-KAx" firstAttribute="top" secondItem="vj5-nv-Ew6" secondAttribute="bottom" constant="8" symbolic="YES" id="Afm-uB-gPt"/>
+                                            <constraint firstItem="Awg-MV-sdp" firstAttribute="top" secondItem="6Wa-4e-KAx" secondAttribute="bottom" constant="8" symbolic="YES" id="Cq8-7S-mau"/>
+                                            <constraint firstItem="vj5-nv-Ew6" firstAttribute="top" secondItem="Nk4-cA-BbF" secondAttribute="top" constant="20" symbolic="YES" id="IFW-fZ-keI"/>
+                                            <constraint firstItem="6Wa-4e-KAx" firstAttribute="leading" secondItem="vj5-nv-Ew6" secondAttribute="leading" id="OJJ-nK-0dS"/>
+                                            <constraint firstItem="2uV-B4-lZq" firstAttribute="leading" secondItem="blk-Df-mdL" secondAttribute="leading" id="OnN-po-HCL"/>
+                                            <constraint firstItem="6Wa-4e-KAx" firstAttribute="trailing" secondItem="vj5-nv-Ew6" secondAttribute="trailing" id="S26-nW-HKl"/>
+                                            <constraint firstItem="2uV-B4-lZq" firstAttribute="trailing" secondItem="blk-Df-mdL" secondAttribute="trailing" id="Tp6-Su-bMg"/>
+                                            <constraint firstItem="Jgi-eO-FLF" firstAttribute="leading" secondItem="Awg-MV-sdp" secondAttribute="leading" id="V92-dz-UuY"/>
+                                            <constraint firstItem="Awg-MV-sdp" firstAttribute="leading" secondItem="Nk4-cA-BbF" secondAttribute="leading" id="Wzh-8h-YGs"/>
+                                            <constraint firstItem="blk-Df-mdL" firstAttribute="trailing" secondItem="Awg-MV-sdp" secondAttribute="trailing" id="YZe-qy-ho9"/>
+                                            <constraint firstItem="Jgi-eO-FLF" firstAttribute="height" secondItem="Awg-MV-sdp" secondAttribute="height" id="bSu-sE-Xvp"/>
+                                            <constraint firstItem="2uV-B4-lZq" firstAttribute="top" secondItem="blk-Df-mdL" secondAttribute="bottom" id="dXx-BJ-p3c"/>
+                                            <constraint firstAttribute="trailing" secondItem="vj5-nv-Ew6" secondAttribute="trailing" constant="20" id="fnd-fU-1UZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Jgi-eO-FLF" secondAttribute="bottom" id="iYJ-gF-l8r"/>
+                                            <constraint firstItem="blk-Df-mdL" firstAttribute="top" secondItem="Awg-MV-sdp" secondAttribute="bottom" id="qkl-bm-D4E"/>
+                                            <constraint firstItem="vj5-nv-Ew6" firstAttribute="leading" secondItem="Nk4-cA-BbF" secondAttribute="leading" constant="20" id="sKm-Le-9hd"/>
+                                            <constraint firstItem="Jgi-eO-FLF" firstAttribute="trailing" secondItem="Awg-MV-sdp" secondAttribute="trailing" id="sXL-fc-IxZ"/>
+                                            <constraint firstItem="blk-Df-mdL" firstAttribute="height" secondItem="Awg-MV-sdp" secondAttribute="height" id="ufy-vK-w8s"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26.5" id="8wQ-EZ-Zlg"/>
+                                    <constraint firstItem="Nk4-cA-BbF" firstAttribute="leading" secondItem="aHT-vI-gEU" secondAttribute="leading" id="LT5-Uf-iRY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nk4-cA-BbF" secondAttribute="trailing" id="TnI-Uk-OMB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nk4-cA-BbF" secondAttribute="bottom" id="hRo-UE-pcb"/>
+                                    <constraint firstItem="Nk4-cA-BbF" firstAttribute="top" secondItem="aHT-vI-gEU" secondAttribute="top" id="vnY-6v-n8h"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="When you share DryBoards, you let your friends know about this great app that does nothing." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Wa-4e-KAx">
-                                <rect key="frame" x="20" y="62.5" width="560" height="36"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="74k-4R-vDn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Awg-MV-sdp" userLabel="Facebook Pane" customClass="SharePaneView" customModule="DryBoards" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="106.5" width="600" height="123.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="KeW-2B-8bi"/>
-                                    <constraint firstAttribute="width" constant="240" id="ePj-z8-R81"/>
-                                    <constraint firstAttribute="height" constant="128" id="oKY-hH-5qt"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="KeW-2B-8bi"/>
-                                        <exclude reference="ePj-z8-R81"/>
-                                        <exclude reference="oKY-hH-5qt"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blk-Df-mdL" userLabel="Twitter Pane" customClass="SharePaneView" customModule="DryBoards" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="230" width="600" height="123.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="3sl-Mt-vkh"/>
-                                    <constraint firstAttribute="width" constant="240" id="DWj-a6-hql"/>
-                                    <constraint firstAttribute="height" constant="128" id="jTK-ZG-dsF"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="jTK-ZG-dsF"/>
-                                        <exclude reference="DWj-a6-hql"/>
-                                        <exclude reference="3sl-Mt-vkh"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uV-B4-lZq" userLabel="Pinterest Pane" customClass="SharePaneView" customModule="DryBoards" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="353.5" width="600" height="123"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="6Y7-KD-g3m"/>
-                                    <constraint firstAttribute="height" constant="128" id="8Lf-09-vWe"/>
-                                    <constraint firstAttribute="width" constant="240" id="PsI-OV-QNI"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="8Lf-09-vWe"/>
-                                        <exclude reference="PsI-OV-QNI"/>
-                                        <exclude reference="6Y7-KD-g3m"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgi-eO-FLF" userLabel="Google Pane" customClass="SharePaneView" customModule="DryBoards" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="476" width="600" height="123.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="b2v-WF-wd9"/>
-                                    <constraint firstAttribute="width" constant="240" id="rpt-MF-W44"/>
-                                    <constraint firstAttribute="height" constant="128" id="vMN-dx-xXO"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="b2v-WF-wd9"/>
-                                        <exclude reference="rpt-MF-W44"/>
-                                        <exclude reference="vMN-dx-xXO"/>
-                                    </mask>
-                                </variation>
-                            </view>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="vj5-nv-Ew6" firstAttribute="top" secondItem="uaE-jb-Sy5" secondAttribute="bottom" constant="8" symbolic="YES" id="11x-pZ-5I2"/>
-                            <constraint firstAttribute="trailing" secondItem="Awg-MV-sdp" secondAttribute="trailing" id="17y-fm-NyL"/>
-                            <constraint firstItem="Awg-MV-sdp" firstAttribute="centerY" secondItem="vpq-YP-iVO" secondAttribute="centerY" id="29a-Y7-UsP"/>
-                            <constraint firstItem="8LN-DU-9Dr" firstAttribute="top" secondItem="Awg-MV-sdp" secondAttribute="bottom" id="2XV-W3-i8q"/>
-                            <constraint firstItem="6Wa-4e-KAx" firstAttribute="leading" secondItem="vj5-nv-Ew6" secondAttribute="leading" id="4iC-8K-L9D"/>
-                            <constraint firstItem="Awg-MV-sdp" firstAttribute="top" secondItem="vpq-YP-iVO" secondAttribute="top" id="4sQ-xK-g6y"/>
-                            <constraint firstItem="Awg-MV-sdp" firstAttribute="centerX" secondItem="vpq-YP-iVO" secondAttribute="centerX" id="5UR-LD-fzD"/>
-                            <constraint firstItem="vj5-nv-Ew6" firstAttribute="leading" secondItem="vpq-YP-iVO" secondAttribute="leadingMargin" id="7Bl-A7-NlU"/>
-                            <constraint firstItem="Jgi-eO-FLF" firstAttribute="height" secondItem="Awg-MV-sdp" secondAttribute="height" id="7OT-Zq-RVo"/>
-                            <constraint firstItem="Awg-MV-sdp" firstAttribute="leading" secondItem="vpq-YP-iVO" secondAttribute="leading" id="8eQ-qM-g3R"/>
-                            <constraint firstItem="Jgi-eO-FLF" firstAttribute="leading" secondItem="Awg-MV-sdp" secondAttribute="leading" id="9HX-SB-Q65"/>
-                            <constraint firstAttribute="bottom" secondItem="Jgi-eO-FLF" secondAttribute="bottom" id="AcT-ue-wmH"/>
-                            <constraint firstItem="blk-Df-mdL" firstAttribute="leading" secondItem="Awg-MV-sdp" secondAttribute="leading" id="Dm5-be-V3J"/>
-                            <constraint firstItem="Awg-MV-sdp" firstAttribute="leading" secondItem="vpq-YP-iVO" secondAttribute="leading" id="IfX-cG-BQC"/>
-                            <constraint firstItem="Jgi-eO-FLF" firstAttribute="top" secondItem="2uV-B4-lZq" secondAttribute="bottom" id="IvP-TX-tsB"/>
-                            <constraint firstItem="vj5-nv-Ew6" firstAttribute="trailing" secondItem="vpq-YP-iVO" secondAttribute="trailingMargin" id="LZI-Fa-YOm"/>
-                            <constraint firstItem="6Wa-4e-KAx" firstAttribute="top" secondItem="vj5-nv-Ew6" secondAttribute="bottom" constant="8" symbolic="YES" id="PIC-UO-mKy"/>
-                            <constraint firstItem="6Wa-4e-KAx" firstAttribute="trailing" secondItem="vj5-nv-Ew6" secondAttribute="trailing" id="Tbp-rU-wMt"/>
-                            <constraint firstItem="Jgi-eO-FLF" firstAttribute="trailing" secondItem="Awg-MV-sdp" secondAttribute="trailing" id="Tqn-dv-aim"/>
-                            <constraint firstItem="Awg-MV-sdp" firstAttribute="top" secondItem="uaE-jb-Sy5" secondAttribute="bottom" id="Vpn-3M-ewq"/>
-                            <constraint firstItem="2uV-B4-lZq" firstAttribute="leading" secondItem="Awg-MV-sdp" secondAttribute="leading" id="YbV-KK-Eja"/>
-                            <constraint firstItem="blk-Df-mdL" firstAttribute="height" secondItem="Awg-MV-sdp" secondAttribute="height" id="cLU-qg-MrI"/>
-                            <constraint firstItem="blk-Df-mdL" firstAttribute="top" secondItem="Awg-MV-sdp" secondAttribute="bottom" id="cfk-Ev-Pki"/>
-                            <constraint firstItem="2uV-B4-lZq" firstAttribute="height" secondItem="Awg-MV-sdp" secondAttribute="height" id="dF2-ST-qXk"/>
-                            <constraint firstItem="Awg-MV-sdp" firstAttribute="top" secondItem="6Wa-4e-KAx" secondAttribute="bottom" constant="8" symbolic="YES" id="hEi-Po-Ek1"/>
-                            <constraint firstItem="blk-Df-mdL" firstAttribute="trailing" secondItem="Awg-MV-sdp" secondAttribute="trailing" id="iCp-mM-hij"/>
-                            <constraint firstItem="Awg-MV-sdp" firstAttribute="top" secondItem="uaE-jb-Sy5" secondAttribute="bottom" id="kD4-k9-hD9"/>
-                            <constraint firstAttribute="trailing" secondItem="Awg-MV-sdp" secondAttribute="trailing" id="lpB-v5-Ozd"/>
-                            <constraint firstItem="2uV-B4-lZq" firstAttribute="trailing" secondItem="Awg-MV-sdp" secondAttribute="trailing" id="uCk-iG-NRF"/>
-                            <constraint firstItem="2uV-B4-lZq" firstAttribute="top" secondItem="blk-Df-mdL" secondAttribute="bottom" id="vla-rG-CxK"/>
+                            <constraint firstItem="Awg-MV-sdp" firstAttribute="height" secondItem="vpq-YP-iVO" secondAttribute="height" multiplier="1/5" id="35W-Bx-kKv"/>
+                            <constraint firstItem="aHT-vI-gEU" firstAttribute="top" secondItem="uaE-jb-Sy5" secondAttribute="bottom" id="CZP-cz-Zoq"/>
+                            <constraint firstAttribute="trailing" secondItem="aHT-vI-gEU" secondAttribute="trailing" id="EK4-8N-0UC"/>
+                            <constraint firstItem="Nk4-cA-BbF" firstAttribute="width" secondItem="vpq-YP-iVO" secondAttribute="width" id="Fvj-dP-MEU"/>
+                            <constraint firstItem="aHT-vI-gEU" firstAttribute="leading" secondItem="vpq-YP-iVO" secondAttribute="leading" id="VbD-rF-chi"/>
+                            <constraint firstItem="8LN-DU-9Dr" firstAttribute="top" secondItem="aHT-vI-gEU" secondAttribute="bottom" id="o4X-Sr-1gX"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="29a-Y7-UsP"/>
-                                <exclude reference="4sQ-xK-g6y"/>
-                                <exclude reference="5UR-LD-fzD"/>
-                                <exclude reference="IfX-cG-BQC"/>
-                                <exclude reference="Vpn-3M-ewq"/>
-                                <exclude reference="kD4-k9-hD9"/>
-                                <exclude reference="lpB-v5-Ozd"/>
-                                <exclude reference="2XV-W3-i8q"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Panes" id="XD1-t7-jdH"/>
                     <connections>
