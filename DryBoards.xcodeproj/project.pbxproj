@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B41E5DEF1BA1BF6A0032AB2D /* ContainerParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E5DEE1BA1BF6A0032AB2D /* ContainerParentViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B41E5DF11BA1BF980032AB2D /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E5DF01BA1BF980032AB2D /* ContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B45D8E131B9F23AD00B75321 /* StaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D8E121B9F23AD00B75321 /* StaticViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B45D8E151B9F281F00B75321 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D8E141B9F281F00B75321 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B45D8E171B9F299E00B75321 /* ShareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D8E161B9F299E00B75321 /* ShareCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B41E5DEE1BA1BF6A0032AB2D /* ContainerParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerParentViewController.swift; sourceTree = "<group>"; };
+		B41E5DF01BA1BF980032AB2D /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		B45D8E121B9F23AD00B75321 /* StaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticViewController.swift; sourceTree = "<group>"; };
 		B45D8E141B9F281F00B75321 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B45D8E161B9F299E00B75321 /* ShareCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCell.swift; sourceTree = "<group>"; };
@@ -106,8 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				B4C2E8CF1B99E2480066B33D /* ViewController.swift */,
-				B45D8E121B9F23AD00B75321 /* StaticViewController.swift */,
 				B45D8E141B9F281F00B75321 /* TableViewController.swift */,
+				B45D8E121B9F23AD00B75321 /* StaticViewController.swift */,
+				B41E5DEE1BA1BF6A0032AB2D /* ContainerParentViewController.swift */,
+				B41E5DF01BA1BF980032AB2D /* ContainerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 			files = (
 				B4798CCE1B9FCF8A0043D25A /* ShareViewModel.swift in Sources */,
 				B4C2E8D01B99E2480066B33D /* ViewController.swift in Sources */,
+				B41E5DF11BA1BF980032AB2D /* ContainerViewController.swift in Sources */,
+				B41E5DEF1BA1BF6A0032AB2D /* ContainerParentViewController.swift in Sources */,
 				B4798CD01B9FD0650043D25A /* ShareType.swift in Sources */,
 				B45D8E131B9F23AD00B75321 /* StaticViewController.swift in Sources */,
 				B4C2E8CE1B99E2480066B33D /* AppDelegate.swift in Sources */,
