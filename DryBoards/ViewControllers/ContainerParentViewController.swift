@@ -16,5 +16,6 @@ class ContainerParentViewController: UIViewController {
         }
 
         container.viewModel = ShareViewModel.init(type:  type)
+        container.shareAction = { ShareController.shareOn(type, from: container) }
     }
 }

@@ -6,6 +6,7 @@ class ContainerViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
 
     var viewModel: ShareViewModel?
+    var shareAction: (() -> ())?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +16,12 @@ class ContainerViewController: UIViewController {
             self.icon.backgroundColor = viewModel.iconBackground
             self.shareLabel.text = viewModel.header
             self.messageLabel.text = viewModel.message
+        }
+    }
+
+    @IBAction func shareButtonDidPress(sender: UIButton) {
+        if let shareAction = shareAction {
+            shareAction()
         }
     }
 }
