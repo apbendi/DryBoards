@@ -89,15 +89,13 @@
 			children = (
 				B4798CD21BA06EF40043D25A /* ShareController.swift */,
 			);
-			name = Controllers;
-			path = DryBoards/Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B4C2E8C11B99E2480066B33D = {
 			isa = PBXGroup;
 			children = (
 				B4C2E8CC1B99E2480066B33D /* DryBoards */,
-				B4798CD11BA06EAD0043D25A /* Controllers */,
 				B4C2E8CB1B99E2480066B33D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +116,7 @@
 				B4C2E8E11B99E3F90066B33D /* Views */,
 				B4798CCC1B9FCF510043D25A /* View Models */,
 				B4C2E8E01B99E3DC0066B33D /* ViewControllers */,
+				B4798CD11BA06EAD0043D25A /* Controllers */,
 				B41E5DF61BA1FF3C0032AB2D /* Third Party */,
 			);
 			path = DryBoards;
@@ -143,12 +142,12 @@
 				B4C2E8D61B99E2480066B33D /* LaunchScreen.storyboard */,
 				B4C2E8D11B99E2480066B33D /* Main.storyboard */,
 				B4C2E8E41B99E8A60066B33D /* Table.storyboard */,
+				B45D8E161B9F299E00B75321 /* ShareCell.swift */,
 				B4C2E8E61B99E9060066B33D /* Containers.storyboard */,
 				B4798CD41BA0769C0043D25A /* Panes.storyboard */,
-				B4C2E8E21B99E7AA0066B33D /* Static.storyboard */,
-				B45D8E161B9F299E00B75321 /* ShareCell.swift */,
 				B41E5DF21BA1FA130032AB2D /* SharePaneView.xib */,
 				B41E5DF41BA1FA420032AB2D /* SharePaneView.swift */,
+				B4C2E8E21B99E7AA0066B33D /* Static.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
