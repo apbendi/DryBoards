@@ -83,6 +83,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="Y0d-pm-33d" secondAttribute="trailing" id="1Pc-dY-O0A"/>
+                                                    <constraint firstItem="hqb-7L-BW8" firstAttribute="leading" secondItem="ebl-AM-odQ" secondAttribute="leading" id="7F7-yE-PYI"/>
                                                     <constraint firstItem="ebl-AM-odQ" firstAttribute="leading" secondItem="NCI-H9-z5i" secondAttribute="trailing" constant="16" id="AwE-oh-tPk"/>
                                                     <constraint firstItem="AYj-vl-ksp" firstAttribute="top" secondItem="jTS-JD-jCs" secondAttribute="top" id="FRI-EK-Xpy"/>
                                                     <constraint firstItem="hqb-7L-BW8" firstAttribute="top" secondItem="ebl-AM-odQ" secondAttribute="bottom" constant="3.5" id="GUB-d9-wks"/>
@@ -103,6 +104,7 @@
                                                 </constraints>
                                                 <variation key="default">
                                                     <mask key="constraints">
+                                                        <exclude reference="LRR-dd-WdO"/>
                                                         <exclude reference="jdq-Wp-X6g"/>
                                                         <exclude reference="hSd-mF-Yga"/>
                                                     </mask>
